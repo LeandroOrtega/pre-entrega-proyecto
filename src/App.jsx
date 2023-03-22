@@ -1,20 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from '../components/Navbar/Navbar'
-import ItemListContainer from '../components/ItemListContainer/ItemListContainer'
-import CartWidget from '../components/CartWidget/CartWidget'
+import "./App.css";
+import Navbar from "../src/components/Navbar/Navbar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
-
   return (
     <>
-      <Navbar/>
-  
-    <h1>La Casa De River Plate</h1>
-  
-    <ItemListContainer/>
+      <Navbar />
+
+      <h1>La Casa De River Plate</h1>
+
+      <ItemListContainer prop="ItemList" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
